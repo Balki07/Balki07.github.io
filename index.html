@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaganesh | Portfolio</title>
+    <style>
+        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background: var(--light); }
+        
+        /* Layout */
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        section { padding: 60px 0; border-bottom: 1px solid #e2e8f0; }
+        
+        /* Typography */
+        h1, h2, h3 { color: var(--dark); margin-bottom: 10px; }
+        .tag { background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin-right: 5px; margin-bottom: 5px;}
+        
+        /* Components */
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .project-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+        /* Navigation */
+        nav { background: white; padding: 15px 0; position: sticky; top: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); z-index: 100; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin: 0; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="container" style="text-align: center; padding: 100px 20px;">
+        <img src="your-photo.jpg" alt="Balaganesh" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary);">
+        <h1>Hi, I'm Balaganesh</h1>
+        <p style="font-size: 1.2rem; color: #64748b;">
+            CSE Student @ Achariya College | SIH 2025 Participant | AI Enthusiast
+        </p>
+        <p>Building scalable web apps and deep learning models.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="https://github.com/Balki07" class="btn" style="background: #333;">GitHub</a>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Technical Arsenal</h2>
+        <div class="project-card">
+            <h3>Languages & Frameworks</h3>
+            <p>
+                <span class="tag">Python</span> <span class="tag">Java</span> <span class="tag">C</span>
+                <span class="tag">Spring Boot</span> <span class="tag">HTML/CSS/JS</span> <span class="tag">MySQL</span>
+            </p>
+            <h3>AI & Data Science</h3>
+            <p>
+                <span class="tag">TensorFlow/Keras</span> <span class="tag">Pandas</span> <span class="tag">NumPy</span>
+                <span class="tag">Matplotlib</span> <span class="tag">Streamlit</span> <span class="tag">Gemini API</span>
+            </p>
+            <h3>Tools</h3>
+            <p>
+                <span class="tag">Git/GitHub</span> <span class="tag">Postman</span> <span class="tag">VS Code</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h3>🌱 AgriCrop (SIH 2025)</h3>
+                <p><strong>Tech:</strong> Deep Learning, Computer Vision, Python</p>
+                <p>Built for the Smart India Hackathon. A precision agriculture tool that detects weeds in crop fields using DL models trained on 5000+ images.</p>
+                <ul>
+                    <li>Achieved 80% accuracy in classification.</li>
+                    <li>Supports selective pesticide spraying to reduce chemical usage.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>📚 AI Study Assistant</h3>
+                <p><strong>Tech:</strong> Streamlit, Google Gemini API, Python</p>
+                <p>An intelligent web app that helps students study smarter.</p>
+                <ul>
+                    <li>Summarizes complex notes instantly.</li>
+                    <li>Generates dynamic multiple-choice quizzes for self-testing.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>☁️ ML Weather Forecaster</h3>
+                <p><strong>Tech:</strong> Random Forest, Scikit-learn</p>
+                <p>Predictive model tuned with RandomizedSearchCV. Evaluated using RMSE and MAE metrics for high precision forecasting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="project-card">
+            <h3>AI & Cloud Intern | Edunet Foundation</h3>
+            <small>Sep 2025 - Oct 2025</small>
+            <p>Developed the AI-powered study assistant using Generative AI APIs.</p>
+        </div>
+        <div class="project-card">
+            <h3>Frontend Developer | Edunet (IBM Skillsbuild)</h3>
+            <small>Aug 2025 - Sep 2025</small>
+            <p>Built a responsive single-page portfolio using Tailwind CSS and JS with interactive skill bars.</p>
+        </div>
+        <div class="project-card">
+            <h3>Placement Co-ordinator | Achariya College</h3>
+            <p>Facilitated industry interaction and organized placement activities for peers.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container" style="text-align: center;">
+        <h2>Let's Connect</h2>
+        <p>I am currently open to internship opportunities.</p>
+        <p>
+            📧 <a href="mailto:balaganeshrv@zohomail.in">balaganeshrv@zohomail.in</a><br>
+            🔗 <a href="https://www.linkedin.com/in/rbalaganesh">LinkedIn Profile</a>
+        </p>
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: #64748b; font-size: 0.9rem;">
+        <p>&copy; 2025 Balaganesh R. Built with Code.</p>
+    </footer>
+
+</body>
+</html>
